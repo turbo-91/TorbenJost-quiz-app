@@ -113,8 +113,7 @@ p {
 
 .nav-bar {
   display: flex;
-  gap: 18vw;
-  align-items: center;
-  justify-content: space-around;
-  padding: 8%;
+  gap: 20vw;
+  justify-content: space-evenly;
+  padding: 2%;
 }
