@@ -20,14 +20,13 @@ body {
 }
 
 header {
-  position: fixed;
   z-index: 1;
+  position: fixed;
   left: 0px;
   top: 0%;
   height: 150px;
   width: 100%;
   background-color: var(--primary-background-color);
-  padding: 20px;
 }
 
 main {
@@ -52,10 +51,9 @@ nav {
 
 h1 {
   position: relative;
-  top: -65px;
   text-align: center;
   color: var(--primary-font-color);
-  font-size: 60px;
+  font-size: 12vw;
 }
 
 h2 {
