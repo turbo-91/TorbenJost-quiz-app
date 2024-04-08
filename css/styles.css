@@ -1,7 +1,60 @@
-@import url(global.css);
+/* @import url(global.css); */
+
+* {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-dark-dark-background-color: #937601;
+  --primary-background-color: bisque;
+  --secondary-background-color: white;
+  --font-color: crimson;
+}
+
+body {
+  top: 0;
+  text-align: center;
+  background-color: var(--secondary-background-color);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 0px;
+  top: 0%;
+  height: 150px;
+  width: 100%;
+  background-color: var(--primary-background-color);
+  padding: 0%;
+  position: absolute;
+}
 
 h1 {
-  background: white;
   text-align: center;
-  color: crimson;
+  color: var(--font-color);
+  font-size: 60px;
+}
+
+main {
+  height: max-content;
+  display: flex;
+}
+
+.question-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  width: 90%;
+  background-color: var(--secondary-background-color);
+}
+
+.question-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: stretch;
+  background-color: var(--secondary-background-color);
 }
