@@ -9,7 +9,8 @@
   --primary-dark-dark-background-color: #937601;
   --primary-background-color: bisque;
   --secondary-background-color: white;
-  --font-color: crimson;
+  --primary-font-color: crimson;
+  --secondary-font-color: #9f9f9f;
 }
 
 body {
@@ -27,34 +28,75 @@ header {
   height: 150px;
   width: 100%;
   background-color: var(--primary-background-color);
-  padding: 0%;
+  padding: 20px;
   position: absolute;
-}
-
-h1 {
-  text-align: center;
-  color: var(--font-color);
-  font-size: 60px;
 }
 
 main {
   height: max-content;
   display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+h1 {
+  padding: 10px;
+  text-align: center;
+  color: var(--primary-font-color);
+  font-size: 60px;
+}
+
+h2 {
+  color: var(--primary-font-color);
+}
+
+p {
+  color: var(--secondary-font-color);
 }
 
 .question-container {
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px;
-  width: 90%;
+  padding-top: 175px;
+  width: 100%;
   background-color: var(--secondary-background-color);
 }
 
 .question-box {
+  width: 360px;
+  height: auto;
+  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-self: stretch;
-  background-color: var(--secondary-background-color);
+  background-color: var(--primary-background-color);
+}
+
+.tag-container {
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  align-self: flex-start;
+  margin: 20px;
+  gap: 20px;
+}
+
+.tag {
+  background-color: pink;
+  padding: 10px;
+}
+
+.bookmark-icon {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-self: flex-end;
+  align-content: end;
+  margin-right: 2vw;
+  max-width: 8vw;
+  max-height: 8vw;
+  top: -3vw;
 }
