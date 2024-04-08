@@ -22,9 +22,9 @@ body {
 header {
   z-index: 1;
   position: fixed;
-  left: 0p%;
+  left: 0%;
   top: 0%;
-  height: 16%;
+  height: 10%;
   width: 100%;
   background-color: var(--primary-background-color);
 }
@@ -40,16 +40,18 @@ main {
 nav {
   z-index: 2;
   position: fixed;
+  display: flex;
   left: 0%;
   right: 0%;
   bottom: 0%;
-  height: 16%;
+  height: 10%;
   width: 100%;
   background-color: var(--primary-background-color);
 }
 
 h1 {
   position: relative;
+  margin-top: 4%;
   text-align: center;
   color: var(--primary-font-color);
   font-size: 12vw;
@@ -111,5 +113,8 @@ p {
 
 .nav-bar {
   display: flex;
-  flex-direction: row;
+  gap: 18vw;
+  align-items: center;
+  justify-content: space-around;
+  padding: 8%;
 }
