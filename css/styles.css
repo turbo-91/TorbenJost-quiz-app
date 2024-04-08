@@ -117,3 +117,12 @@ p {
   justify-content: space-evenly;
   padding: 2%;
 }
+
+.white-block {
+  height: 20%;
+  width: 100%;
+}
+
+.question-10 {
+  margin-bottom: 19vh;
+}
