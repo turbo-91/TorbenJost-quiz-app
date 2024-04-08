@@ -40,6 +40,18 @@ main {
   flex-wrap: wrap;
 }
 
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 0px;
+  height: 150px;
+  width: 100%;
+  background-color: var(--primary-background-color);
+  padding: 20px;
+  position: absolute;
+}
+
 h1 {
   padding: 10px;
   text-align: center;
