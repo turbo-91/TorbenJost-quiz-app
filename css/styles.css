@@ -123,6 +123,7 @@ p {
   width: 100%;
 }
 
-.question-10 {
+.question-10,
+.last-bookmark {
   margin-bottom: 19vh;
 }
