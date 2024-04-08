@@ -7,10 +7,12 @@
 
 :root {
   --primary-dark-dark-background-color: #937601;
-  --primary-background-color: bisque;
-  --secondary-background-color: white;
-  --primary-font-color: crimson;
-  --secondary-font-color: #9f9f9f;
+  --primary-background-color: #ffd7d5;
+  --secondary-background-color: #f3ffe1;
+  --tertiary-background-color: #e8d7ff;
+  --highlight-color: #ffd3e8;
+  --primary-font-color: #dfffd6;
+  --secondary-font-color: #f3ffe1;
 }
 
 body {
@@ -26,7 +28,7 @@ header {
   top: 0%;
   height: 10%;
   width: 100%;
-  background-color: var(--primary-background-color);
+  background-color: var(--tertiary-background-color);
 }
 
 main {
@@ -46,7 +48,7 @@ nav {
   bottom: 0%;
   height: 10%;
   width: 100%;
-  background-color: var(--primary-background-color);
+  background-color: var(--tertiary-background-color);
 }
 
 h1 {
@@ -61,8 +63,18 @@ h2 {
   color: var(--primary-font-color);
 }
 
+button {
+  background-color: var(--highlight-color);
+  color: var(--secondary-background-color);
+  border-color: var(--primary-font-color);
+  box-shadow: none;
+}
+
 p {
   color: var(--secondary-font-color);
+  background-color: var(--tertiary-background-color);
+  padding: 3%;
+  width: 100%;
 }
 
 .question-container {
@@ -95,7 +107,7 @@ p {
 }
 
 .tag {
-  background-color: pink;
+  background-color: var(--highlight-color);
   padding: 10px;
 }
 
