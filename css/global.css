@@ -65,7 +65,7 @@ h2 {
 button {
   border: none;
   box-shadow: 1vw 1vw var(--secondary-background-color);
-  background-color: var(--highlight-color);
+  background-color: var(--tertiary-background-color);
   color: var(--secondary-font-color);
   font-size: x-large;
   padding: 3%;
