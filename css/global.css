@@ -9,8 +9,8 @@
   --secondary-background-color: #f3ffe1;
   --tertiary-background-color: #e8d7ff;
   --highlight-color: #ffd3e8;
-  --primary-font-color: #dfffd6;
-  --secondary-font-color: #f3ffe1;
+  --primary-font-color: white;
+  --secondary-font-color: white;
 }
 
 body {
@@ -24,7 +24,6 @@ header {
   position: fixed;
   left: 0%;
   top: 0%;
-  /* height: 10%; */
   width: 100%;
   background-color: var(--tertiary-background-color);
 }
@@ -41,7 +40,6 @@ footer {
   z-index: 2;
   position: fixed;
   display: flex;
-
   bottom: 0%;
   width: 100vw;
   background-color: var(--tertiary-background-color);
@@ -54,7 +52,7 @@ h1 {
   position: relative;
   margin-top: 4%;
   text-align: center;
-  color: var(--primary-font-color);
+  color: var(--secondary-background-color);
   font-size: 12vw;
 }
 
@@ -68,7 +66,8 @@ button {
   border: none;
   box-shadow: 1vw 1vw var(--secondary-background-color);
   background-color: var(--highlight-color);
-  color: var(--secondary-background-color);
+  color: var(--secondary-font-color);
+  font-size: x-large;
   padding: 3%;
 }
 
@@ -77,6 +76,6 @@ p {
   background-color: var(--tertiary-background-color);
   padding: 3%;
   width: 100%;
-  font-size: larger;
+  font-size: x-large;
   margin-bottom: -2%;
 }
