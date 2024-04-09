@@ -49,13 +49,6 @@
   top: -3vw;
 }
 
-.nav-bar {
-  display: flex;
-  gap: 20vw;
-  justify-content: space-evenly;
-  padding: 2%;
-}
-
 .question-10,
 .last-bookmark {
   margin-bottom: 19vh;

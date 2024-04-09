@@ -24,7 +24,7 @@ header {
   position: fixed;
   left: 0%;
   top: 0%;
-  height: 10%;
+  /* height: 10%; */
   width: 100%;
   background-color: var(--tertiary-background-color);
 }
@@ -37,16 +37,17 @@ main {
   flex-wrap: wrap;
 }
 
-nav {
+footer {
   z-index: 2;
   position: fixed;
   display: flex;
-  left: 0%;
-  right: 0%;
+
   bottom: 0%;
-  height: 10%;
-  width: 100%;
+  width: 100vw;
   background-color: var(--tertiary-background-color);
+  gap: 20vw;
+  justify-content: space-evenly;
+  padding: 2%;
 }
 
 h1 {
