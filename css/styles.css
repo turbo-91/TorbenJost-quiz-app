@@ -1,101 +1,25 @@
-/* @import url(global.css); */
-
-* {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  box-sizing: border-box;
-}
-
-:root {
-  --primary-dark-dark-background-color: #937601;
-  --primary-background-color: #ffd7d5;
-  --secondary-background-color: #f3ffe1;
-  --tertiary-background-color: #e8d7ff;
-  --highlight-color: #ffd3e8;
-  --primary-font-color: #dfffd6;
-  --secondary-font-color: #f3ffe1;
-}
-
-body {
-  margin: 0%;
-  text-align: center;
-  background-color: var(--secondary-background-color);
-}
-
-header {
-  z-index: 1;
-  position: fixed;
-  left: 0%;
-  top: 0%;
-  height: 10%;
-  width: 100%;
-  background-color: var(--tertiary-background-color);
-}
-
-main {
-  height: max-content;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
-nav {
-  z-index: 2;
-  position: fixed;
-  display: flex;
-  left: 0%;
-  right: 0%;
-  bottom: 0%;
-  height: 10%;
-  width: 100%;
-  background-color: var(--tertiary-background-color);
-}
-
-h1 {
-  position: relative;
-  margin-top: 4%;
-  text-align: center;
-  color: var(--primary-font-color);
-  font-size: 12vw;
-}
-
-h2 {
-  color: var(--primary-font-color);
-}
-
-button {
-  border: none;
-  box-shadow: 3px 3px var(--secondary-background-color);
-  background-color: var(--highlight-color);
-  color: var(--secondary-background-color);
-  padding: 3%;
-}
-
-p {
-  color: var(--secondary-font-color);
-  background-color: var(--tertiary-background-color);
-  padding: 3%;
-  width: 100%;
-}
+@import url(global.css);
 
 .question-container {
   height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 175px;
+  padding-top: 40vw;
   width: 100%;
   background-color: var(--secondary-background-color);
 }
 
 .question-box {
-  width: 360px;
+  width: 90vw;
   height: auto;
-  margin-bottom: 20px;
+  margin-bottom: 5vw;
+  margin-left: -2%;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: var(--primary-background-color);
+  box-shadow: 2vw 2vw var(--highlight-color);
 }
 
 .tag-container {
@@ -103,14 +27,14 @@ p {
   width: fit-content;
   display: flex;
   align-self: flex-start;
-  margin: 20px;
-  gap: 20px;
+  margin: 5vw;
+  gap: 5vw;
 }
 
 .tag {
   background-color: var(--highlight-color);
-  box-shadow: 3px 3px var(--secondary-background-color);
-  padding: 10px;
+  box-shadow: 1vw 1vw var(--secondary-background-color);
+  padding: 3vw;
 }
 
 .bookmark-icon {
@@ -130,11 +54,6 @@ p {
   gap: 20vw;
   justify-content: space-evenly;
   padding: 2%;
-}
-
-.white-block {
-  height: 20%;
-  width: 100%;
 }
 
 .question-10,
