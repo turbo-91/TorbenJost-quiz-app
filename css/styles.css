@@ -1,15 +1,5 @@
 @import url(global.css);
 
-.question-container {
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 40vw;
-  width: 100%;
-  background-color: var(--secondary-background-color);
-}
-
 .question-box {
   width: 90vw;
   height: auto;
@@ -49,7 +39,7 @@
   top: -3vw;
 }
 
-.question-10,
+.last-question,
 .last-bookmark {
-  margin-bottom: 19vh;
+  margin-bottom: 18vh;
 }
