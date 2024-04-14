@@ -22,6 +22,6 @@ p {
   background-color: var(--tertiary-background-color);
   padding: 3%;
   width: 100%;
-  font-size: x-large;
+  font-size: large;
   margin-bottom: -2%;
 }
