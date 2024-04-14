@@ -12,7 +12,7 @@
   box-shadow: 2vw 2vw var(--highlight-color);
 }
 
-.tag-container {
+.question-box__tag-container {
   height: fit-content;
   width: fit-content;
   display: flex;
@@ -21,13 +21,13 @@
   gap: 5vw;
 }
 
-.tag {
+.question-box__tag-container__tag {
   background-color: var(--highlight-color);
   box-shadow: 1vw 1vw var(--secondary-background-color);
   padding: 3vw;
 }
 
-.bookmark-icon {
+.question-box__bookmark-icon {
   position: relative;
   display: flex;
   flex-direction: row;
