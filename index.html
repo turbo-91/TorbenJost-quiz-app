@@ -2,127 +2,91 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSS & HTML Quiz - Questions</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <title>Dad Joke Quiz</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./js/script.js" defer></script>
   </head>
   <body>
     <header>
-        
-        <h1>CSS & HTML Quiz</h1>
-      </header>
-    <main> 
-        <section class="question-container">
-        <section class="question-box question-1">
-            <img src="media/icons/bookmark_transparent.png" alt="bookmark icon unsigned" class="bookmark-icon"/>
-            <h2>What does CSS stand for?</h2>
-            <button aria-label="answer button">Hide answer</button>
-            <p>Cascading Style Sheets</p>
-            <section class="tag-container">
-                <p class="tag">#basics</p>
-                <p class="tag">#CSS</p>
-                </section>
-        </section>
-        <section class="question-box question-2">
-            <img src="media/icons/bookmark_filled.png" alt="bookmark icon unsigned" class="bookmark-icon"/>
-            <h2>Which HTML tag is used to link an external CSS file to an HTML document?</h2>
-            <button aria-label="answer button">Hide answer</button>
-            <p>&lt;link&gt;</p>
-            <section class="tag-container">
-            <p class="tag">#HTML</p>
-            <p class="tag">#stylesheet</p>
-            <p class="tag">#CSS</p>
-            </section>
-        </section>
-        <section class="question-box question-3">
-            <img src="media/icons/bookmark_filled.png" alt="bookmark icon unsigned" class="bookmark-icon"/>
-            <h2>What is the purpose of the HTML &lt;div&gt; element?</h2>
-            <button aria-label="answer button">Hide answer</button>
-            <p>It is a container element used to group and style content together.</p>
-            <section class="tag-container">
-                <p class="tag">#HTML</p>
-                <p class="tag">#elements</p>
-                </section>
-        </section>
-        <section class="question-box question-4">
-            <img src="media/icons/bookmark_transparent.png" alt="bookmark icon unsigned" class="bookmark-icon"/>
-            <h2>Which CSS property is used to change the text color of an element?</h2>
-            <button aria-label="answer button">Hide answer</button>
-            <p>color</p>
-            <section class="tag-container">
-                <p class="tag">#CSS</p>
-                <p class="tag">#elements</p>
-                <p class="tag">#color</p>
-                </section>
-        </section>
-        <section class="question-box question-5">
-            <img src="media/icons/bookmark_transparent.png" alt="bookmark icon unsigned" class="bookmark-icon"/>
-            <h2>What is the default display property for most HTML elements?</h2>
-            <button aria-label="answer button">Hide answer</button>
-            <p>block</p>
-            <section class="tag-container">
-                <p class="tag">#HTML</p>
-                <p class="tag">#property</p>
-                </section>
-        </section>
-        <section class="question-box question-6git ">
-            <img src="media/icons/bookmark_filled.png" alt="bookmark icon unsigned" class="bookmark-icon"/>
-            <h2>How can you center an element horizontally in CSS?</h2>
-            <button aria-label="answer button">Hide answer</button>
-            <p>By setting its margin property to auto.</p>
-            <section class="tag-container">
-                <p class="tag">#CSS</p>
-                <p class="tag">#margins</p>
-                </section>
-        </section>
-        <section class="question-box question-7">
-            <img src="media/icons/bookmark_transparent.png" alt="bookmark icon unsigned" class="bookmark-icon"/>
-            <h2>What is the CSS pseudo-class used to select the first child of an element?</h2>
-            <button aria-label="answer button">Hide answer</button>
-            <p>:first-child</p>
-            <section class="tag-container">
-            <p class="tag">#CSS</p>
-            <p class="tag">#pseudo-class</p>
-            <p class="tag">#elements</p>
-            </section>
-        </section>
-        <section class="question-box question-8">
-            <img src="media/icons/bookmark_transparent.png" alt="bookmark icon unsigned" class="bookmark-icon"/>
-            <h2>Which HTML tag is used to create an ordered (numbered) list?</h2>
-            <button aria-label="answer button">Show answer</button>
-            <p hidden>&lt;ol&gt;</p>
-            <section class="tag-container">
-                <p class="tag">#HTML</p>
-                <p class="tag">#tags</p>
-                </section>
-        </section>
-        <section class="question-box question-9">
-            <img src="media/icons/bookmark_transparent.png" alt="bookmark icon unsigned" class="bookmark-icon"/>
-            <h2> In CSS, what property is used to control the spacing between lines of text within an element?</h2>
-            <button aria-label="answer button">Show answer</button>
-            <p hidden>line-height</p>
-            <section class="tag-container">
-                <p class="tag">#CSS</p>
-                <p class="tag">#elements</p>
-                <p class="tag">#spacing</p>
-                </section>
-        </section>
-        <section class="question-box question-10">
-            <img src="media/icons/bookmark_transparent.png" alt="bookmark icon unsigned" class="bookmark-icon"/>
-            <h2>What is the default display property for most HTML elements?</h2>
-            <button aria-label="answer button">Show answer</button>
-            <p hidden>block</p>
-            <section class="tag-container">
-                <p class="tag">#HTML</p>
-                <p class="tag">#property</p>
-                <p class="tag">#display</p>
-                </section>
-        </section>
-    </section>
-    <footer>
-                <a href="#"><img src="media/icons/home_filled.png" alt="home icon signed" width="80px" height="80px"/></a>
-                <a href="bookmarks.html"><img src="media/icons/bookmark_transparent.png" alt="bookmark icon unsigned" width="80px" height="80px"  /></a>
-                <a href="profile.html"><img src="media/icons/profile.png" alt="profile icon unsigned" width="80px" height="80px" /></a>
-    </footer></main>
-
+      <h1>Dad Joke Quiz</h1>
+    </header>
+    <main>
+      <section class="question-card">
+        <img
+          class="question-card__icon"
+          src="/assets/bookmark_transparent.png"
+          alt="bookmark"
+          data-js="bookmark"
+        />
+        <h2 class="question-card__title">
+          What did one plate say to another plate?
+        </h2>
+        <button class="question-card__button" data-js="button">
+          show answer
+        </button>
+        <p class="question-card__answer" data-js="answer">
+          Tonight, dinner’s on me.
+        </p>
+        <div class="question-card__tags">
+          <div class="question-card__tag">#dinner</div>
+          <div class="question-card__tag">#dishes</div>
+        </div>
+      </section>
+      <section class="question-card">
+        <img
+          class="question-card__icon question-card__icon--active"
+          src="./assets/bookmark_transparent.png"
+          alt="bookmark filled"
+        />
+        <h2 class="question-card__title">
+          How many paranoids does it take to change a light bulb?
+        </h2>
+        <button class="question-card__button">show answer</button>
+        <p class="question-card__answer"></p>
+        <div class="question-card__tags">
+          <div class="question-card__tag">#mentalhealth</div>
+          <div class="question-card__tag">#electricity</div>
+        </div>
+      </section>
+      <section class="question-card">
+        <img
+          class="question-card__icon"
+          src="./assets/bookmark_transparent.png"
+          alt="bookmark"
+        />
+        <h2 class="question-card__title">What did the evil chicken lay?</h2>
+        <button class="question-card__button">show answer</button>
+        <p class="question-card__answer"></p>
+        <div class="question-card__tags">
+          <div class="question-card__tag">#diabolic</div>
+          <div class="question-card__tag">#dinner</div>
+          <div class="question-card__tag">#dishes</div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <a href="index.html" class="footer__link footer__link--active">
+        <img
+          class="footer__icon footer__icon--filled"
+          src="./assets/home_filled.png"
+          alt="home filled"
+        />
+      </a>
+      <a href="bookmark.html" class="footer__link">
+        <img
+          class="footer__icon"
+          src="./assets/bookmark_transparent.png"
+          alt="bookmark"
+        />
+      </a>
+      <a href="form.html" class="footer__link">
+        <img class="footer__icon" src="./assets/add.png" alt="profile" />
+      </a>
+      <a href="profile.html" class="footer__link">
+        <img class="footer__icon" src="./assets/profile.png" alt="profile" />
+      </a>
+    </footer>
+  </body>
 </html>

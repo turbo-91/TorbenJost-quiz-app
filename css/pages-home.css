@@ -1,0 +1,57 @@
+.question-card__icon {
+  position: absolute;
+  height: 10vw;
+  right: 0;
+  top: -15px;
+}
+
+.question-card__icon__hidden {
+  content: url("/assets/bookmark_filled.png");
+}
+
+.question-card__title {
+  text-align: center;
+}
+
+.question-card__button {
+  content: "show answer";
+  background-color: var(--accent-color);
+  padding: 5px 20px;
+  border: 0px solid black;
+  box-shadow: 0.5vw 0.5vw 1vw 0px rgb(167, 167, 167);
+  font-size: var(--fs-500);
+}
+
+.question-card__button_hideAnswer {
+  border-radius: 20px;
+  padding: 5px 20px;
+  border: 1px solid black;
+  box-shadow: 0.5vw 0.5vw 1vw 0px rgb(167, 167, 167);
+  font-size: var(--fs-500);
+  content: "hide answer";
+}
+
+.question-card__tags {
+  display: flex;
+  margin-top: 20px;
+}
+
+.question-card__tag {
+  background-color: var(--accent-color);
+  padding: 5px 10px;
+  border-radius: 0px;
+  box-shadow: 0.5vw 0.5vw 1vw 0px rgb(167, 167, 167);
+  border: 0px;
+}
+
+.question-card__tag:not(:last-child) {
+  margin-right: 10px;
+}
+
+.question-card__answer {
+  visibility: hidden;
+}
+
+.question-card__answer__unhide {
+  visibility: visible;
+}
