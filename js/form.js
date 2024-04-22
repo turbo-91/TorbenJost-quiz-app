@@ -1,6 +1,40 @@
 const form = document.querySelector('[data-js="form"]');
 const main = document.querySelector('[data-js="main"]');
 
+// Character counter for question input field
+
+const yourQuestion = document.querySelector('[data-js="yourQuestion"]');
+const amountLeftQuestion = document.querySelector(
+  '[data-js="amountLeftQuestion"]'
+);
+const maxLengthQuestion = yourQuestion.getAttribute("maxlength");
+
+const updateAmountLeftQuestion = (value) => {
+  amountLeftQuestion.innerText = value;
+};
+
+updateAmountLeftQuestion(maxLengthQuestion);
+
+yourQuestion.addEventListener("input", () => {
+  updateAmountLeftQuestion(maxLengthQuestion - yourQuestion.value.length);
+});
+
+// Character counter for answer input field
+
+const yourAnswer = document.querySelector('[data-js="Answer"]');
+const amountLeftAnswer = document.querySelector('[data-js="amountLeftAnswer"]');
+const maxLengthAnswer = yourAnswer.getAttribute("maxlength");
+
+const updateAmountLeftAnswer = (value) => {
+  amountLeftAnswer.innerText = value;
+};
+
+updateAmountLeftAnswer(maxLengthAnswer);
+
+yourAnswer.addEventListener("input", () => {
+  updateAmountLeftAnswer(maxLengthAnswer - yourAnswer.value.length);
+});
+
 // Create new Question card on submit
 
 function onSubmit(event) {
@@ -52,42 +86,19 @@ function onSubmit(event) {
   tagContainer.append(tag);
 
   event.target.reset();
+  amountLeftQuestion.textContent = 150; // reset character count
+  amountLeftAnswer.textContent = 150; // reset charactercount
+
+  function bookmarkToggle() {
+    if (img.getAttribute("src") === "./assets/bookmark_transparent.png") {
+      img.setAttribute("src", "./assets/bookmark_filled.png");
+    } else {
+      img.setAttribute("src", "./assets/bookmark_transparent.png");
+    }
+  }
+  img.addEventListener("click", bookmarkToggle);
 }
 
 form.addEventListener("submit", onSubmit);
 
 // add show / hide functionality
-
-// Character counter for question input field
-
-const yourQuestion = document.querySelector('[data-js="yourQuestion"]');
-const amountLeftQuestion = document.querySelector(
-  '[data-js="amountLeftQuestion"]'
-);
-const maxLengthQuestion = yourQuestion.getAttribute("maxlength");
-
-const updateAmountLeftQuestion = (value) => {
-  amountLeftQuestion.innerText = value;
-};
-
-updateAmountLeftQuestion(maxLengthQuestion);
-
-yourQuestion.addEventListener("input", () => {
-  updateAmountLeftQuestion(maxLengthQuestion - yourQuestion.value.length);
-});
-
-// Character counter for answer input field
-
-const yourAnswer = document.querySelector('[data-js="Answer"]');
-const amountLeftAnswer = document.querySelector('[data-js="amountLeftAnswer"]');
-const maxLengthAnswer = yourAnswer.getAttribute("maxlength");
-
-const updateAmountLeftAnswer = (value) => {
-  amountLeftAnswer.innerText = value;
-};
-
-updateAmountLeftAnswer(maxLengthAnswer);
-
-yourAnswer.addEventListener("input", () => {
-  updateAmountLeftAnswer(maxLengthAnswer - yourAnswer.value.length);
-});
