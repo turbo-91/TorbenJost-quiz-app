@@ -60,10 +60,11 @@ function onSubmit(event) {
 
   const answerButton = document.createElement("button");
   answerButton.setAttribute("class", "question-card__button");
-  answerButton.textContent = "Hide Answer";
+  answerButton.textContent = "hide Answer";
 
   const answer = document.createElement("paragraph");
   answer.setAttribute("class", "question-card__answer__form");
+  question.setAttribute("data-js", "form__question-card__answer");
   let answerInput = data.yourAnswer;
   answer.textContent = answerInput;
 
@@ -85,9 +86,12 @@ function onSubmit(event) {
   sectionCard.append(tagContainer);
   tagContainer.append(tag);
 
-  event.target.reset();
+  event.target.reset(); // reset input elements
+
   amountLeftQuestion.textContent = 150; // reset character count
   amountLeftAnswer.textContent = 150; // reset charactercount
+
+  // bookmark toggle for newly created card
 
   function bookmarkToggle() {
     if (img.getAttribute("src") === "./assets/bookmark_transparent.png") {
@@ -97,8 +101,20 @@ function onSubmit(event) {
     }
   }
   img.addEventListener("click", bookmarkToggle);
+
+  // answer toggle for newly created cards
+
+  function answerButtonSwitch() {
+    if (answerButton.textContent === "hide answer") {
+      answerButton.textContent = "show answer";
+    } else {
+      answerButton.textContent = "hide answer";
+    }
+  }
+
+  answerButton.addEventListener("click", () => {
+    answerButtonSwitch();
+  });
 }
 
 form.addEventListener("submit", onSubmit);
-
-// add show / hide functionality
