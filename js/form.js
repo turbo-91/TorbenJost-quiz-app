@@ -63,7 +63,7 @@ function onSubmit(event) {
   answerButton.textContent = "hide Answer";
 
   const answer = document.createElement("paragraph");
-  answer.setAttribute("class", "question-card__answer__form");
+  answer.setAttribute("class", "question-card__answer");
   question.setAttribute("data-js", "form__question-card__answer");
   let answerInput = data.yourAnswer;
   answer.textContent = answerInput;
@@ -113,6 +113,7 @@ function onSubmit(event) {
   }
 
   answerButton.addEventListener("click", () => {
+    answer.classList.toggle("question-card__answer__unhide");
     answerButtonSwitch();
   });
 }

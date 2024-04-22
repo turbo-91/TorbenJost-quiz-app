@@ -25,6 +25,10 @@ input {
   padding: 10px;
 }
 
+.yourAnswer__character-count {
+  margin-bottom: 1vw;
+}
+
 .form__button {
   margin-top: 3vw;
   background-color: var(--accent-color);
@@ -43,12 +47,4 @@ input {
   border: 0px solid black;
   box-shadow: 0.5vw 0.5vw 1vw 0px rgb(167, 167, 167);
   font-size: var(--fs-500);
-}
-
-.question-card__answer__form {
-  margin-top: 2vw;
-}
-
-.yourAnswer__character-count {
-  margin-bottom: 1vw;
 }

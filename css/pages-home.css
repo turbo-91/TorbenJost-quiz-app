@@ -31,6 +31,15 @@
   content: "hide answer";
 }
 
+.question-card__answer {
+  visibility: hidden;
+}
+
+.question-card__answer__unhide {
+  margin-top: 2vw;
+  visibility: visible;
+}
+
 .question-card__tags {
   display: flex;
   margin-top: 20px;
@@ -46,12 +55,4 @@
 
 .question-card__tag:not(:last-child) {
   margin-right: 10px;
-}
-
-.question-card__answer {
-  visibility: hidden;
-}
-
-.question-card__answer__unhide {
-  visibility: visible;
 }
