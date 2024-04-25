@@ -11,24 +11,22 @@
 
 .question-card__title {
   text-align: center;
+  font-weight: 200;
 }
 
 .question-card__button {
   content: "show answer";
-  background-color: var(--accent-color);
-  padding: 5px 20px;
-  border: 0px solid black;
-  box-shadow: 0.5vw 0.5vw 1vw 0px rgb(167, 167, 167);
+  padding: 1vh;
+  border: 2px solid var(--accent-color);
+  border-radius: 7px;
   font-size: var(--fs-500);
+  background-color: white;
 }
 
-.question-card__button_hideAnswer {
-  border-radius: 20px;
-  padding: 5px 20px;
-  border: 1px solid black;
-  box-shadow: 0.5vw 0.5vw 1vw 0px rgb(167, 167, 167);
-  font-size: var(--fs-500);
-  content: "hide answer";
+.question-card__button:hover {
+  transition: all 200ms;
+  background-color: var(--active-color);
+  border: 2px solid var(--active-color);
 }
 
 .question-card__answer {
@@ -46,11 +44,18 @@
 }
 
 .question-card__tag {
-  background-color: var(--accent-color);
-  padding: 5px 10px;
-  border-radius: 0px;
-  box-shadow: 0.5vw 0.5vw 1vw 0px rgb(167, 167, 167);
-  border: 0px;
+  background-color: white;
+  padding: 1vh;
+  border: 2px solid var(--accent-color);
+  border-radius: 7px;
+  font-size: var(--fs-500);
+  background-color: white;
+}
+
+.question-card__tag:hover {
+  transition: all 200ms;
+  background-color: var(--active-color);
+  border: 2px solid var(--active-color);
 }
 
 .question-card__tag:not(:last-child) {
