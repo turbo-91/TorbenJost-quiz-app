@@ -1,6 +1,6 @@
 .question-card__icon {
   position: absolute;
-  height: 10vw;
+  height: 4vh;
   right: 0;
   top: -15px;
 }
@@ -15,12 +15,14 @@
 }
 
 .question-card__button {
+  position: relative;
   content: "show answer";
   padding: 1vh;
   border: 2px solid var(--accent-color);
   border-radius: 7px;
   font-size: var(--fs-500);
   background-color: white;
+  width: fit-content;
 }
 
 .question-card__button:hover {
@@ -46,6 +48,7 @@
 .question-card__tag {
   background-color: white;
   padding: 1vh;
+  margin-bottom: 1vh;
   border: 2px solid var(--accent-color);
   border-radius: 7px;
   font-size: var(--fs-500);

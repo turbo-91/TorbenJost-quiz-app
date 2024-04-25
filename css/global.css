@@ -1,9 +1,9 @@
 :root {
   --accent-color: #bffe3d;
   --active-color: #ebfe4c;
-  --fs-500: 1.1rem;
-  --fs-600: 1.5rem;
-  --fs-900: 3rem;
+  --fs-500: 100%;
+  --fs-600: 130%;
+  --fs-900: 300%;
 }
 
 body {
@@ -15,14 +15,6 @@ body {
   box-sizing: border-box;
   font-family: Helvetica, Arial, sans-serif;
   color: #101217;
-}
-
-h1 {
-  margin: 0;
-  font-size: var(--fs-900);
-  font-weight: 100;
-  position: relative;
-  text-align: center;
 }
 
 header,
@@ -43,15 +35,28 @@ main {
 }
 
 section {
-  top: 1vh;
   position: relative;
-  padding: 10px;
+  top: 1vh;
+  margin-bottom: 2vh;
+  position: relative;
   border: solid var(--accent-color) 3px;
   border-radius: 7px;
-  margin-bottom: 40px;
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
+}
+
+h1 {
+  margin: 0;
+  font-size: var(--fs-900);
+  font-weight: 100;
+  position: relative;
+  text-align: center;
+}
+
+h2 {
+  font-size: var(--fs-600);
 }
 
 .footer {
